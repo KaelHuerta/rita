@@ -1,0 +1,10 @@
+# History files
+.Rhistory
+
+# Example code in package build process
+*-Ex.R
+
+*.csv
+*.bz2
+
+s*_

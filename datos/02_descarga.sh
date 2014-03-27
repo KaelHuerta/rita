@@ -35,3 +35,4 @@ cat rita.urls | parallel curl -O
 rm rita.urls
 
 #paplay /usr/share/sounds/KDE-Im-User-Auth.ogg
+mailx -s "Rita descargada." < /dev/null "kaelhuerta@gmail.com"

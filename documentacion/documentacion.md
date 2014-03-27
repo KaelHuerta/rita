@@ -197,13 +197,7 @@ sudo su postgres
 psql -c 'create role <usuario> login password '<contraseña>' superuser valid until 'infinity';'
 psql -c 'create database rita'
 ~~~
-y empezar a jugar...
-
-### Descargando Rita
-
-~~~{bash}
-
-~~~
+y a empezar a jugar...
 
 ## Varios
 
@@ -227,11 +221,17 @@ Una buena discusión puede verse [aquí](http://www.neowin.net/forum/topic/43439
 df -h
 ~~~
 
-
 ### Alertas por correo
+
 ~~~{bash}
 sudo apt-get install mailutils
 ~~~
+Para enviarte correos, poner al final de los scripts algo de la forma
+~~~{bash}
+mailx -s "Correo con sólo asunto, perfecto para alertas" < /dev/null "yo@midominio.com"
+echo "cuerpo del correo" | mail -s "asunto" "yo@midominio.com"
+~~~
+
 
 ## Tiempos de Ejecución
 

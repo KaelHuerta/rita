@@ -38,8 +38,7 @@ echo "$(tput setaf 1)Cambiando de formato los datos y guardando en el esquema 'c
 
 # Lanzamos la limpieza de manera secuencial
 psql -d rita -U kaelinho -f limpia_rita.sql
+date
 
-
-paplay /usr/share/sounds/KDE-Im-User-Auth.ogg
-
-
+#paplay /usr/share/sounds/KDE-Im-User-Auth.ogg
+mailx -s "Rita cargada y limpia" < /dev/null "kaelhuerta@gmail.com"

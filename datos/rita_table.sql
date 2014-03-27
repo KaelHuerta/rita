@@ -1,6 +1,6 @@
 --------------- Particiones de la tabla Rita ---------------
-DROP TABLE clean.rita cascade;
-DROP FUNCTION rita_insert();
+--DROP TABLE clean.rita cascade;
+--DROP FUNCTION rita_insert();
 
 CREATE TABLE clean.rita (
 --	Year integer,

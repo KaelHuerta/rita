@@ -1,4 +1,4 @@
-INSERT INTO results.time_serie (
+INSERT INTO ts.time_serie (
     SELECT 
         uniquecarrier
        ,tailnum

@@ -47,6 +47,7 @@ $$ LANGUAGE plpgsql;
 -- );
 
 -- Me ahorro la búsqueda de los NA con la función convert_to_integer
+-- No fue mejor, la función es más tardada que revisar si es NA
 INSERT INTO clean.rita(
 	SELECT
 	(year || '-' || month || '-' || dayofmonth)::date AS FlightDate,

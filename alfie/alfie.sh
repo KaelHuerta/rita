@@ -17,4 +17,5 @@ cat alfie_ix.sql | parallel -j+0 --eta psql -d rita -c '{}'
 echo "Aspirando y analizando..."
 cat alfie_vacuum.sql | parallel -j+0 --eta psql -d rita -c '{}'
 
-paplay /usr/share/sounds/KDE-Im-User-Auth.ogg
+#paplay /usr/share/sounds/KDE-Im-User-Auth.ogg
+mailx -s "Tabla Al's mix lista." < /dev/null "kaelhuerta@gmail.com"

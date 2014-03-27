@@ -17,4 +17,5 @@ cat ts_ix.sql | parallel -j+0 --eta psql -d rita -c '{}'
 echo "Aspirando y analizando..."
 cat ts_vacuum.sql | parallel -j+0 --eta psql -d rita -c '{}'
 
-paplay /usr/share/sounds/KDE-Im-User-Auth.ogg
+#paplay /usr/share/sounds/KDE-Im-User-Auth.ogg
+mailx -s "Tabla serie de tiempo lista." < /dev/null "kaelhuerta@gmail.com"

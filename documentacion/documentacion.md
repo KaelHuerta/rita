@@ -233,13 +233,7 @@ echo "cuerpo del correo" | mail -s "asunto" "yo@midominio.com"
 ~~~
 
 
-## Tiempos de Ejecución
 
-Descarga de Rita en paralelo. `01_descarga.sh`
-- 30 segundos
-
-Descompresión de rita, conversión y *split*. `02_crea_csv.sh`
-- 25 minutos
 
 ## *Tunning* del Servidor
 

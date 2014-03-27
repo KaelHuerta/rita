@@ -27,7 +27,7 @@ done
 # Lanzamos los "queries" en paralelo
 #parallel --verbose --dryrun -a archivos.txt 'psql -d rita -U kaelinho -c \"{}\"'
 date
-parallel -j +0 --eta -a archivos.txt 'psql -d rita -U kaelinho -c {}'
+#parallel -j +0 --eta -a archivos.txt 'psql -d rita -U kaelinho -c {}'
 #parallel -j +0 --eta --results outdir -a archivos.txt 'psql -d rita -U kaelinho -c {}'
 date
 

@@ -11,4 +11,5 @@ Carga de la base de datos en sucio
 
 Limpieza de la base de datos
 - 7 horas
-hola hola 
+
+Series de tiempo

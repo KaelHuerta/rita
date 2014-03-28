@@ -4,6 +4,10 @@
 			partition by uniquecarrier, tailnum
 		order by flightdate
 		) as first,
+	last_value(flightdate) over (
+			partition by uniquecarrier, tailnum
+		order by flightdate
+		) as last,
 	lag(dest) over (
 		partition by uniquecarrier, tailnum
 		order by flightdate, deptime

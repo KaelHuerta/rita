@@ -9,7 +9,8 @@ CREATE TABLE alfie.alfie (
 	 ,flightdate    date   
 	 ,origin        text   
 	 ,dest          text   
-	 ,first         date   
+	 ,first         date  
+	 ,last          date 
 	 ,lag           text   
 	 ,deptime       integer
 	 ,month_delay   numeric

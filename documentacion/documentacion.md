@@ -194,8 +194,9 @@ export LD_LIBRARY_PATH
 Para ingresar con mi usuario y sin contraseña a la base de datos se neccesita crear el usuario en la base de datos, con el mismo nombre que el del sistema (se pueden *mapear*, pero podemos ahorrarnos esto).
 ~~~{bash}
 sudo su postgres
-psql -c 'create role <usuario> login password '<contraseña>' superuser valid until 'infinity';'
-psql -c 'create database rita'
+psql
+create role kaelinho login password 'popochito';
+'superuser valid until 'infinity';
 ~~~
 y a empezar a jugar...
 

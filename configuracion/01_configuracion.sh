@@ -6,11 +6,11 @@ echo "$(tput setaf 1)Cambiando la configuración del servidor...$(tput sgr0)"
 cp /etc/postgresql/9.3/main/postgresql.conf /etc/postgresql/9.3/main/postgresql.conf.old
 
 # Sobreescribo el archivo de configuración
-cp ./mi_postgresql.conf /etc/postgresql/9.3/main/postgresql.conf
+cp ./configuracion/mi_postgresql.conf /etc/postgresql/9.3/main/postgresql.conf
 
 echo "$(tput setaf 1)Cambiando el tamaño de la página virtual...$(tput sgr0)"
 # Cambio el tamaño de paginación
-./paginacion.sh
+./configuracion/paginacion.sh
 
 # Reinicio el servido para que tomen efecto los cambios
 sudo service postgresql restart

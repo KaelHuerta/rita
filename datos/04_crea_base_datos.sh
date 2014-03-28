@@ -10,5 +10,5 @@ else
   createdb rita
 fi
 
-psql -f schemas.sql -d rita
-psql -f rita_table.sql -d rita
+psql -f ./datos/schemas.sql -d rita
+psql -f ./datos/rita_table.sql -d rita

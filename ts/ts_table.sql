@@ -1,6 +1,6 @@
 -- drop table ts.time_serie cascade;
 
-CREATE SCHEMA ts;
+CREATE SCHEMA IF NOT EXISTS ts;
 
 CREATE TABLE ts.time_serie (
     uniquecarrier     text

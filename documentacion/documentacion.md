@@ -109,10 +109,14 @@ y deberían ingresar automáticamente al servidor aws, así como poder usarlo pa
 ## Configuración en el servidor
 
 ### Algunas instalaciones necesarias
+
 ~~~{bash}
 sudo apt-get install htop
 sudo apt-get install parallel
+sudo apt-get install git # Ya estaba instalado
+git config --global color.ui true
 ~~~
+
 
 Para tener varias sesiones se tienen que renombrar, esto se hace con `ctrl+b` seguido de `$`. Para ver las sesiones disponibles, usar `tmux list-sessions`.
 

@@ -1,8 +1,6 @@
 --------------- Particiones de la tabla Rita ---------------
---DROP TABLE clean.rita cascade;
---DROP FUNCTION rita_insert();
 
-CREATE TABLE clean.rita (
+CREATE TABLE IF NO EXISTS clean.rita (
 --	Year integer,
 --	Month integer,
 --	DayofMonth integer,

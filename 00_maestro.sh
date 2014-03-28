@@ -8,13 +8,13 @@ do
   if [ "$respuesta" = "Si" ]
     then
   	  # Descargamos los archivos
-	    #./datos/02_descarga.sh
+	    ./datos/02_descarga.sh >> log
 	    # Descomprimimos, cambiamos "encoding" y dividimos
-	    #./datos/03_crear_csv.sh
+	    ./datos/03_crear_csv.sh >> log
 	    # Creando la base de datos
-	    ./datos/04_crea_base_datos.sh
+	    ./datos/04_crea_base_datos.sh >> log
 	    # Cargando y limpiando la base de datos
-	    ./datos/05_carga_rita.sh
+	    ./dirty/05_carga_rita.sh >> log
       # Cargando la serie de tiempo
       ./ts/ts.sh
 

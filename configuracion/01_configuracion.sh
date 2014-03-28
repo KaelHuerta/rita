@@ -16,7 +16,7 @@ echo "$(tput setaf 1)Cambiando el tamaño de la página virtual...$(tput sgr0)"
 sudo service postgresql restart
 
 # Creamos el directorio (aunque de juguete) donde se va a crear el "tablespace"
-[ -d /data/rita ] && rm -r /data/rita
-mkdir /data/rita
+#[ -d /data/rita ] && rm -r /data/rita
+#mkdir /data/rita
 
-chown postgres /data/rita
+#chown postgres /data/rita

@@ -3,14 +3,11 @@
 CREATE SCHEMA IF NOT EXISTS ts;
 
 CREATE TABLE ts.time_serie (
-    uniquecarrier     text
+    flightdate        timestamp
+   ,uniquecarrier     text
    ,tailnum           text
-   ,origin            text
-   ,dest              text
-   ,flightdate        timestamp
    ,dayofweek         integer
    ,hourofday		    integer
-   ,crsdeptime        integer
    ,crsarrtime        integer
    ,depdelay          integer
    ,arrdelay          integer
@@ -19,7 +16,9 @@ CREATE TABLE ts.time_serie (
    ,nasdelay          integer
    ,securitydelay     integer
    ,lateaircraftdelay integer
-   ,delay             integer
+   ,numdelay          integer
+   ,numontime         integer
+   ,numearly          integer
 );
 
 CREATE TABLE ts.time_serie_1987 (

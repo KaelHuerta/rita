@@ -1,6 +1,6 @@
 --CREATE TABLESPACE rita_space OWNER kaelihno LOCATION '/data/rita';
-DROP TABLESPACE IF EXISTS rita_space;
-CREATE TABLESPACE rita_space LOCATION '/data/rita';
+-- DROP TABLESPACE IF EXISTS rita_space;
+-- CREATE TABLESPACE rita_space LOCATION '/data/rita';
 
 CREATE SCHEMA dirty;
 CREATE SCHEMA clean;

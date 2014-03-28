@@ -33,7 +33,7 @@ CREATE TABLE clean.rita (
 	NASDelay integer,
 	SecurityDelay integer,
 	LateAircraftDelay integer
-) TABLESPACE rita_space;
+);
 
 CREATE TABLE clean.rita_1987 (
 CONSTRAINT partition_date_range

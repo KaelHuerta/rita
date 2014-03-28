@@ -8,13 +8,18 @@ do
   if [ "$respuesta" = "Si" ]
     then
   	  # Descargamos los archivos
-	  ./datos/02_descarga.sh
-	  # Descomprimimos, cambiamos "encoding" y dividimos
-	  ./datos/03_crear_csv.sh
-	  # Creando la base de datos
-	  ./datos/04_crea_base_datos.sh
-	  # Cargando y limpiando la base de datos
-	  ./datos/05_carga_rita.sh
+	    #./datos/02_descarga.sh
+	    # Descomprimimos, cambiamos "encoding" y dividimos
+	    #./datos/03_crear_csv.sh
+	    # Creando la base de datos
+	    ./datos/04_crea_base_datos.sh
+	    # Cargando y limpiando la base de datos
+	    ./datos/05_carga_rita.sh
+      # Cargando la serie de tiempo
+      ./ts/ts.sh
+
+      echo "$(tput setaf 1)Proceso terminado.$(tput sgr0)"
+      break;
   fi
   if [ "$respuesta" = "No" ]
   	then

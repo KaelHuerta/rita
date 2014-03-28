@@ -6,7 +6,7 @@
 # Generamos archivo sobre el cual iterar en paralelo
 for year in {1987..2008}
 do
-echo "http://stat-computing.org/dataexpo/2009/$year.csv.bz2" >> rita.urls
+echo "http://stat-computing.org/dataexpo/2009/$year.csv.bz2" >> ./datos/rita.urls
 done
 
 # Preguntamos al usuario si desea descargar o generar los catálogos
@@ -17,9 +17,9 @@ do
   if [ "$respuesta" = "Si" ]
     then
   	  echo "$(tput setaf 1)Descargando los catálogos...$(tput sgr0)"
-  	  echo "http://stat-computing.org/dataexpo/2009/airports.csv" >> rita.urls
-	  echo "http://stat-computing.org/dataexpo/2009/plane-data.csv" >> rita.urls
-	  echo "http://stat-computing.org/dataexpo/2009/carriers.csv" >> rita.urls
+  	  echo "http://stat-computing.org/dataexpo/2009/airports.csv" >> ./datos/rita.urls
+	  echo "http://stat-computing.org/dataexpo/2009/plane-data.csv" >> ./datos/rita.urls
+	  echo "http://stat-computing.org/dataexpo/2009/carriers.csv" >> ./datos/rita.urls
   	  break
   fi
   if [ "$respuesta" = "No" ]
@@ -32,7 +32,7 @@ done
 # Descargamos en paralelo
 cat rita.urls | parallel curl -O
 
-rm rita.urls
+rm ./datos/rita.urls
 
 #paplay /usr/share/sounds/KDE-Im-User-Auth.ogg
 mailx -s "Rita descargada." < /dev/null "kaelhuerta@gmail.com"

@@ -63,7 +63,8 @@ CREATE UNLOGGED TABLE dirty.rita (
 	NASDelay text,
 	SecurityDelay text,
 	LateAircraftDelay text
-) TABLESPACE rita_space;
+--) TABLESPACE rita_space;
+);
 
 
 CREATE FOREIGN TABLE clean.airports (

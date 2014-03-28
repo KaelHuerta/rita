@@ -264,4 +264,12 @@ Las modificaciones realizadas fueron:
 - log_temp_files = 0
 - autovacuum = off
 
+~~~{bash}
+echo 2 > /proc/sys/vm/overcommit_memory
+echo 100 > /proc/sys/vm/overcommit_ratio
+~~~
+
+En caso de no saber que hacer probar [esto](https://github.com/gregs1104/pgtune)
+
+
 [Más información](http://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server)

@@ -4,21 +4,28 @@
 CREATE SCHEMA alfie;
 
 CREATE TABLE alfie.alfie (
-	uniquecarrier text   
+      uniquecarrier text   
 	 ,tailnum       text   
-	 ,flightdate    date   
+	 ,flightdate    date
+     ,year          integer
+     ,month         integer 
 	 ,origin        text   
 	 ,dest          text   
 	 ,first         date  
 	 ,last          date 
 	 ,lag           text   
 	 ,deptime       integer
-	 ,month_delay   numeric
-	 ,year_delay    numeric
-	 ,km_carrier    real
+	 ,delaymonth    numeric
+	 ,delayyear     numeric
+	 ,kmcarrier     integer
+	 ,kmtail        integer
 	 ,qdist 		integer
 	 ,qtime			integer
-	 ,flytime		real
+	 ,flytime		numeric
+	 ,flightscarrier integer
+	 ,flightstail   integer
+	 ,delayscarrier integer
+	 ,delaystail integer
 	 ,flights		integer
 	 ,delays 		real   
 );

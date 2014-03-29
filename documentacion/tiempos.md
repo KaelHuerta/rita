@@ -10,7 +10,7 @@ Carga de la base de datos en sucio
 - 15 minutos
 
 Limpieza de la base de datos
-- 7 horas
+- De 7 horas a 3 con índice sobre la fecha.
 
 Series de tiempo (Creación, indexado y aspirado)
 - 3.5 horas

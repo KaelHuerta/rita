@@ -22,7 +22,8 @@ psql -d rita -c 'CREATE INDEX ix_diry_date ON dirty.rita_1987 (flightdate);'
 #cat ./dirty/rita_ix.sql | parallel -j+0 --eta psql -d rita -c '{}'
 
 echo "$(tput setaf 1)Aspirando y analizando...$(tput sgr0)"
-cat ./dirty/rita_vacuum.sql | parallel -j+0 --eta psql -d rita -c '{}'
+psql -d rita -c 'vauum analyze dirty.rita;'
+#cat ./dirty/rita_vacuum.sql | parallel -j+0 --eta psql -d rita -c '{}'
 
 mailx -s "Rita cargada en sucio." < /dev/null "kaelhuerta@gmail.com"
 

@@ -17,7 +17,7 @@ OPTIONS (
 
 CREATE FOREIGN TABLE clean.carriers (
     UniqueCarrier text
-   ,CarrierName          text
+   ,CarrierName   text
 ) SERVER file_server
 OPTIONS (
     filename '/home/kaelinho/rita/datos/carriers.csv'

@@ -1,4 +1,4 @@
- INSERT INTO dirty.alfie2 (
+ INSERT INTO alfie.alfie (
 	SELECT 
 	    uniquecarrier
 	   ,tailnum

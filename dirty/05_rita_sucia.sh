@@ -17,8 +17,9 @@ parallel -j +0 --eta -a ./datos/archivos.txt 'psql -d rita -U kaelinho -c {}'
 rm ./datos/archivos.txt
 
 
-echo "$(tput setaf 1)Creando índices...$(tput sgr0)"
-cat ./dirty/rita_ix.sql | parallel -j+0 --eta psql -d rita -c '{}'
+echo "$(tput setaf 1)Creando índice...$(tput sgr0)"
+psql -d rita -c 'CREATE INDEX ix_diry_date ON dirty.rita_1987 (flightdate);'
+#cat ./dirty/rita_ix.sql | parallel -j+0 --eta psql -d rita -c '{}'
 
 echo "$(tput setaf 1)Aspirando y analizando...$(tput sgr0)"
 cat ./dirty/rita_vacuum.sql | parallel -j+0 --eta psql -d rita -c '{}'

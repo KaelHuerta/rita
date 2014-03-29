@@ -1,17 +1,3 @@
--- Para convertir de texto a enteros
-CREATE OR REPLACE FUNCTION convert_to_integer(v_input text)
-RETURNS INTEGER AS $$
-DECLARE v_int_value INTEGER DEFAULT NULL;
-BEGIN
-    BEGIN
-        v_int_value := v_input::INTEGER;
-    EXCEPTION WHEN OTHERS THEN
-        RETURN NULL;
-    END;
-RETURN v_int_value;
-END;
-$$ LANGUAGE plpgsql;
-
 -- Si es 'NA' devuelve NULL, si no, el valor de la variable
 INSERT INTO clean.rita(
 	SELECT
@@ -43,4 +29,6 @@ INSERT INTO clean.rita(
 	CASE WHEN SecurityDelay = 'NA' THEN NULL ELSE convert_to_integer(SecurityDelay) END AS SecurityDelay,
 	CASE WHEN LateAircraftDelay = 'NA' THEN NULL ELSE convert_to_integer(LateAircraftDelay) END AS LateAircraftDelay
 FROM dirty.rita
+WHERE (year || '-' || month || '-' || dayofmonth)::date >= DATE (:v1 || '-01-01')
+  AND (year || '-' || month || '-' || dayofmonth)::date <= DATE (:v1 || '-12-31')
 );

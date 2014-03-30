@@ -15,10 +15,8 @@ do
 	    # Creando la base de datos
 	    ./datos/04_crea_base_datos.sh >> log
 	    # Cargando y limpiando la base de datos
-	    ./dirty/05_carga_rita.sh >> log
-      # Creando la tabla Alf's Mix
-      ./alfie/alfie.sh >> log
-      # Creando la serie de tiempo
+	    ./dirty/05_rita_sucia.sh >> log
+      # Cargando la serie de tiempo
       ./ts/ts.sh
 
       echo "$(tput setaf 1)Proceso terminado.$(tput sgr0)"

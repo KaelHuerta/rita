@@ -14,10 +14,12 @@ do
 	    #./datos/03_crear_csv.sh >> log
 	    # Creando la base de datos
 	    ./datos/04_crea_base_datos.sh >> log
-	    # Cargando y limpiando la base de datos
+	    # Cargando la base de datos
 	    ./dirty/05_rita_sucia.sh >> log
-      # Cargando la serie de tiempo
+      # Limpiando la base de datos
       ./clean/06_rita.sh >> log
+      # Creando tabla Alfie's Mix
+      ./alfie/07_alfie.sh >> log
 
       echo "$(tput setaf 1)Proceso terminado.$(tput sgr0)"
       break;

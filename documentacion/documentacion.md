@@ -245,16 +245,16 @@ echo "cuerpo del correo" | mail -s "asunto" "yo@midominio.com"
 Las modificaciones realizadas fueron:
 
 
-- shared_buffers = 4GB
+- shared_buffers = 3GB
 - temp_buffers = 16MB
 - work_mem = 3GB (para que al correr en paralelo no tire el servidor)
-- maintenance_work_mem = 3GB
+- maintenance_work_mem = 1GB
 - wal_buffers = 16MB
 - checkpoint_segments = 256
 - checkpoint_timeout = 30min
 - checkpoint_completion_target = 0.9
 - effective_cache_size = 11GB
-- default_statistics_target = 10000
+- default_statistics_target = 1000
 - log_destination = 'csvlog'
 - logging_collector = on
 - log_directory = 'pg_log'
@@ -268,10 +268,11 @@ Las modificaciones realizadas fueron:
 - log_lock_waits = on
 - log_temp_files = 0
 - autovacuum = off
+- max_connections = 5 (tire el servidor varias veces por no cambiar esto)
 
 ~~~{bash}
-echo 2 > /proc/sys/vm/overcommit_memory
-echo 100 > /proc/sys/vm/overcommit_ratio
+sudo sysctl -w vm.overcommit_memory=0
+sysctl -w vm.overcommit_ratio=60
 ~~~
 
 En caso de no saber que hacer probar [esto](https://github.com/gregs1104/pgtune)

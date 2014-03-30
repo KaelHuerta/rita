@@ -17,7 +17,7 @@ do
 	    # Cargando y limpiando la base de datos
 	    ./dirty/05_rita_sucia.sh >> log
       # Cargando la serie de tiempo
-      ./ts/ts.sh
+      ./clean/06_rita.sh >> log
 
       echo "$(tput setaf 1)Proceso terminado.$(tput sgr0)"
       break;

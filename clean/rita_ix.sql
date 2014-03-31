@@ -22,7 +22,6 @@ CREATE INDEX ix_clean_date_2007 ON clean.rita_2007 (flightdate);
 CREATE INDEX ix_clean_date_2008 ON clean.rita_2008 (flightdate);
 CREATE INDEX ix_clean_date_2009 ON clean.rita_2009 (flightdate);
 CREATE INDEX ix_clean_date_2010 ON clean.rita_2010 (flightdate);
-
 CREATE INDEX ix_clean_year_1987 ON clean.rita_1987 (extract(year FROM flightdate));
 CREATE INDEX ix_clean_year_1988 ON clean.rita_1988 (extract(year FROM flightdate));
 CREATE INDEX ix_clean_year_1989 ON clean.rita_1989 (extract(year FROM flightdate));

@@ -1,33 +1,21 @@
 -- drop table alfie.alfie cascade;
 -- drop schema alfie;
 
-CREATE SCHEMA alfie;
+CREATE SCHEMA IF NOT EXISTS alfie;
 
 CREATE TABLE alfie.alfie (
-      uniquecarrier text   
-	 ,tailnum       text   
-	 ,flightdate    date
-     ,year          integer
-     ,month         integer 
-	 ,origin        text   
-	 ,dest          text   
-	 ,first         date  
-	 ,last          date 
-	 ,lag           text   
-	 ,deptime       integer
-	 ,delaymonth    numeric
-	 ,delayyear     numeric
-	 ,kmcarrier     integer
-	 ,kmtail        integer
-	 ,qdist 		integer
-	 ,qtime			integer
-	 ,flytime		numeric
+      uniquecarrier  text   
+	 ,tailnum        text   
+     ,year           integer
+     ,month          integer 
+	 ,firsttail      date  
+	 ,lasttail       date 
+	 ,delaymonth     numeric
+	 ,kmcarrier      integer
+	 ,flytimecarrier numeric
 	 ,flightscarrier integer
-	 ,flightstail   integer
-	 ,delayscarrier integer
-	 ,delaystail integer
-	 ,flights		integer
-	 ,delays 		real   
+	 ,avgmonthdelay  numeric
+	 ,numdest        integer
 );
 
 CREATE TABLE alfie.alfie_1987 (

@@ -8,9 +8,7 @@ psql -d rita -f ./alfie/dest_table.sql
 
 echo "$(tput setaf 1)Creando tabla intermedia...$(tput sgr0)"
 parallel -j+0 --eta 'psql -f ./alfie/dest_insert.sql -d rita -v v1={}' ::: $(seq 1987 2008)
-cat ./alfie/dest_vacuum.sql | parallel -j+0 --eta psql -d rita -c '{}'
-cat ./alfie/dest_ix.sql | parallel -j+0 --eta psql -d rita -c '{}'
-cat ./alfie/dest_vacuum.sql | parallel -j+0 --eta psql -d rita -c '{}'
+psql -d rita -c 'vacuum analyze clean.destinations;'
 
 echo "$(tput setaf 1)Insertando datos a Alf's Mix...$(tput sgr0)"
 parallel -j+0 --eta 'psql -f ./alfie/alfie_insert.sql -d rita -v v1={}' ::: $(seq 1987 2008)

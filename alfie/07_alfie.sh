@@ -1,21 +1,27 @@
 #!/bin/bash
 
-echo "----- TABLA ALFREDO 2.1 -----"
+echo "$(tput setaf 1)----- TABLA ALFREDO 2.1 -----$(tput sgr0)"
 
-echo "Creando esquema y tabla particionada..."
+echo "$(tput setaf 1)Creando esquema y tablas...$(tput sgr0)"
 psql -d rita -f ./alfie/alfie_table.sql
+psql -d rita -f ./alfie/dest_table.sql
 
-echo "Insertando datos a la base..."
+echo "$(tput setaf 1)Creando tabla intermedia...$(tput sgr0)"
+parallel -j+0 --eta 'psql -f ./alfie/dest_insert.sql -d rita -v v1={}' ::: $(seq 1987 2008)
+cat ./alfie/dest_vacuum.sql | parallel -j+0 --eta psql -d rita -c '{}'
+cat ./alfie/dest_ix.sql | parallel -j+0 --eta psql -d rita -c '{}'
+cat ./alfie/dest_vacuum.sql | parallel -j+0 --eta psql -d rita -c '{}'
+
+echo "$(tput setaf 1)Insertando datos a Alf's Mix...$(tput sgr0)"
 parallel -j+0 --eta 'psql -f ./alfie/alfie_insert.sql -d rita -v v1={}' ::: $(seq 1987 2008)
 
-echo "Aspirando y analizando..."
+echo "$(tput setaf 1)Aspirando y analizando...$(tput sgr0)"
 cat ./alfie/alfie_vacuum.sql | parallel -j+0 --eta psql -d rita -c '{}'
 
-echo "Creando índices..."
+echo "$(tput setaf 1)Creando índices...$(tput sgr0)"
 cat ./alfie/alfie_ix.sql | parallel -j+0 --eta psql -d rita -c '{}'
 
-echo "Aspirando y analizando..."
+echo "$(tput setaf 1)Aspirando y analizando...$(tput sgr0)"
 cat ./alfie/alfie_vacuum.sql | parallel -j+0 --eta psql -d rita -c '{}'
 
-#paplay /usr/share/sounds/KDE-Im-User-Auth.ogg
 mailx -s "Tabla Al's mix lista." < /dev/null "kaelhuerta@gmail.com"

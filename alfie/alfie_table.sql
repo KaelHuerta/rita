@@ -20,146 +20,122 @@ CREATE TABLE alfie.alfie (
 
 CREATE TABLE alfie.alfie_1987 (
 CONSTRAINT partition_date_range
-CHECK (flightdate >=  DATE '1987-01-01'
-AND flightdate < DATE'1988-01-01')
+CHECK (year = 1987)
 ) INHERITS ( alfie.alfie );
 
 CREATE TABLE alfie.alfie_1988 (
 CONSTRAINT partition_date_range
-CHECK (flightdate >=  DATE '1988-01-01'
-AND flightdate < DATE'1989-01-01')
+CHECK (year = 1988)
 ) INHERITS ( alfie.alfie );
 
 CREATE TABLE alfie.alfie_1989 (
 CONSTRAINT partition_date_range
-CHECK (flightdate >=  DATE '1989-01-01'
-AND flightdate < DATE'1990-01-01')
+CHECK (year = 1989)
 ) INHERITS ( alfie.alfie );
 
 CREATE TABLE alfie.alfie_1990 (
 CONSTRAINT partition_date_range
-CHECK (flightdate >=  DATE '1990-01-01'
-AND flightdate < DATE'1991-01-01')
+CHECK (year = 1990)
 ) INHERITS ( alfie.alfie );
 
 CREATE TABLE alfie.alfie_1991 (
 CONSTRAINT partition_date_range
-CHECK (flightdate >=  DATE '1991-01-01'
-AND flightdate < DATE'1992-01-01')
+CHECK (year = 1991)
 ) INHERITS ( alfie.alfie );
 
 CREATE TABLE alfie.alfie_1992 (
 CONSTRAINT partition_date_range
-CHECK (flightdate >=  DATE '1992-01-01'
-AND flightdate < DATE'1993-01-01')
+CHECK (year = 1992)
 ) INHERITS ( alfie.alfie );
 
 CREATE TABLE alfie.alfie_1993 (
 CONSTRAINT partition_date_range
-CHECK (flightdate >=  DATE '1993-01-01'
-AND flightdate < DATE'1994-01-01')
+CHECK (year = 1993)
 ) INHERITS ( alfie.alfie );
 
 CREATE TABLE alfie.alfie_1994 (
 CONSTRAINT partition_date_range
-CHECK (flightdate >=  DATE '1994-01-01'
-AND flightdate < DATE'1995-01-01')
+CHECK (year = 1994)
 ) INHERITS ( alfie.alfie );
 
 CREATE TABLE alfie.alfie_1995 (
 CONSTRAINT partition_date_range
-CHECK (flightdate >=  DATE '1995-01-01'
-AND flightdate < DATE'1996-01-01')
+CHECK (year = 1995)
 ) INHERITS ( alfie.alfie );
 
 CREATE TABLE alfie.alfie_1996 (
 CONSTRAINT partition_date_range
-CHECK (flightdate >=  DATE '1996-01-01'
-AND flightdate < DATE'1997-01-01')
+CHECK (year = 1996)
 ) INHERITS ( alfie.alfie );
 
 CREATE TABLE alfie.alfie_1997 (
 CONSTRAINT partition_date_range
-CHECK (flightdate >=  DATE '1997-01-01'
-AND flightdate < DATE'1998-01-01')
+CHECK (year = 1997)
 ) INHERITS ( alfie.alfie );
 
 CREATE TABLE alfie.alfie_1998 (
 CONSTRAINT partition_date_range
-CHECK (flightdate >=  DATE '1998-01-01'
-AND flightdate < DATE'1999-01-01')
+CHECK (year = 1998)
 ) INHERITS ( alfie.alfie );
 
 CREATE TABLE alfie.alfie_1999 (
 CONSTRAINT partition_date_range
-CHECK (flightdate >=  DATE '1999-01-01'
-AND flightdate < DATE'2000-01-01')
+CHECK (year = 1999)
 ) INHERITS ( alfie.alfie );
 
 CREATE TABLE alfie.alfie_2000 (
 CONSTRAINT partition_date_range
-CHECK (flightdate >=  DATE '2000-01-01'
-AND flightdate < DATE'2001-01-01')
+CHECK (year = 2000)
 ) INHERITS ( alfie.alfie );
 
 CREATE TABLE alfie.alfie_2001 (
 CONSTRAINT partition_date_range
-CHECK (flightdate >=  DATE '2001-01-01'
-AND flightdate < DATE'2002-01-01')
+CHECK (year = 2001)
 ) INHERITS ( alfie.alfie );
 
 CREATE TABLE alfie.alfie_2002 (
 CONSTRAINT partition_date_range
-CHECK (flightdate >=  DATE '2002-01-01'
-AND flightdate < DATE'2003-01-01')
+CHECK (year = 2002)
 ) INHERITS ( alfie.alfie );
 
 CREATE TABLE alfie.alfie_2003 (
 CONSTRAINT partition_date_range
-CHECK (flightdate >=  DATE '2003-01-01'
-AND flightdate < DATE'2004-01-01')
+CHECK (year = 2003)
 ) INHERITS ( alfie.alfie );
 
 CREATE TABLE alfie.alfie_2004 (
 CONSTRAINT partition_date_range
-CHECK (flightdate >=  DATE '2004-01-01'
-AND flightdate < DATE'2005-01-01')
+CHECK (year = 2004)
 ) INHERITS ( alfie.alfie );
 
 CREATE TABLE alfie.alfie_2005 (
 CONSTRAINT partition_date_range
-CHECK (flightdate >=  DATE '2005-01-01'
-AND flightdate < DATE'2006-01-01')
+CHECK (year = 2005)
 ) INHERITS ( alfie.alfie );
 
 CREATE TABLE alfie.alfie_2006 (
 CONSTRAINT partition_date_range
-CHECK (flightdate >=  DATE '2006-01-01'
-AND flightdate < DATE'2007-01-01')
+CHECK (year = 2006)
 ) INHERITS ( alfie.alfie );
 
 CREATE TABLE alfie.alfie_2007 (
 CONSTRAINT partition_date_range
-CHECK (flightdate >=  DATE '2007-01-01'
-AND flightdate < DATE'2008-01-01')
+CHECK (year = 2007)
 ) INHERITS ( alfie.alfie );
 
 CREATE TABLE alfie.alfie_2008 (
 CONSTRAINT partition_date_range
-CHECK (flightdate >=  DATE '2008-01-01'
-AND flightdate < DATE'2009-01-01')
+CHECK (year = 2008)
 ) INHERITS ( alfie.alfie );
 
 CREATE TABLE alfie.alfie_2009 (
 CONSTRAINT partition_date_range
-CHECK (flightdate >=  DATE '2009-01-01'
-AND flightdate < DATE'2010-01-01')
+CHECK (year = 2009)
 ) INHERITS ( alfie.alfie );
 
 CREATE TABLE alfie.alfie_2010 (
 CONSTRAINT partition_date_range
-CHECK (flightdate >=  DATE '2010-01-01'
-AND flightdate < DATE'2011-01-01')
+CHECK (year = 2010)
 ) INHERITS ( alfie.alfie );
 
 CREATE or replace FUNCTION alfie_insert ()
@@ -167,53 +143,53 @@ RETURNS trigger
 LANGUAGE plpgsql AS $f$
 BEGIN
 CASE
-WHEN new.flightdate < DATE '1988-01-01'
+WHEN new.year = 1987
 THEN INSERT INTO alfie.alfie_1987 VALUES (NEW.*);
-WHEN new.flightdate < DATE '1989-01-01'
+WHEN new.year = 1988
 THEN INSERT INTO alfie.alfie_1988 VALUES (NEW.*);
-WHEN new.flightdate < DATE '1990-01-01'
+WHEN new.year = 1989
 THEN INSERT INTO alfie.alfie_1989 VALUES (NEW.*);
-WHEN new.flightdate < DATE '1991-01-01'
+WHEN new.year = 1990
 THEN INSERT INTO alfie.alfie_1990 VALUES (NEW.*);
-WHEN new.flightdate < DATE '1992-01-01'
+WHEN new.year = 1991
 THEN INSERT INTO alfie.alfie_1991 VALUES (NEW.*);
-WHEN new.flightdate < DATE '1993-01-01'
+WHEN new.year = 1992
 THEN INSERT INTO alfie.alfie_1992 VALUES (NEW.*);
-WHEN new.flightdate < DATE '1994-01-01'
+WHEN new.year = 1993
 THEN INSERT INTO alfie.alfie_1993 VALUES (NEW.*);
-WHEN new.flightdate < DATE '1995-01-01'
+WHEN new.year = 1994
 THEN INSERT INTO alfie.alfie_1994 VALUES (NEW.*);
-WHEN new.flightdate < DATE '1996-01-01'
+WHEN new.year = 1995
 THEN INSERT INTO alfie.alfie_1995 VALUES (NEW.*);
-WHEN new.flightdate < DATE '1997-01-01'
+WHEN new.year = 1996
 THEN INSERT INTO alfie.alfie_1996 VALUES (NEW.*);
-WHEN new.flightdate < DATE '1998-01-01'
+WHEN new.year = 1997
 THEN INSERT INTO alfie.alfie_1997 VALUES (NEW.*);
-WHEN new.flightdate < DATE '1999-01-01'
+WHEN new.year = 1998
 THEN INSERT INTO alfie.alfie_1998 VALUES (NEW.*);
-WHEN new.flightdate < DATE '2000-01-01'
+WHEN new.year = 1999
 THEN INSERT INTO alfie.alfie_1999 VALUES (NEW.*);
-WHEN new.flightdate < DATE '2001-01-01'
+WHEN new.year = 2000
 THEN INSERT INTO alfie.alfie_2000 VALUES (NEW.*);
-WHEN new.flightdate < DATE '2002-01-01'
+WHEN new.year = 2001
 THEN INSERT INTO alfie.alfie_2001 VALUES (NEW.*);
-WHEN new.flightdate < DATE '2003-01-01'
+WHEN new.year = 2002
 THEN INSERT INTO alfie.alfie_2002 VALUES (NEW.*);
-WHEN new.flightdate < DATE '2004-01-01'
+WHEN new.year = 2003
 THEN INSERT INTO alfie.alfie_2003 VALUES (NEW.*);
-WHEN new.flightdate < DATE '2005-01-01'
+WHEN new.year = 2004
 THEN INSERT INTO alfie.alfie_2004 VALUES (NEW.*);
-WHEN new.flightdate < DATE '2006-01-01'
+WHEN new.year = 2005
 THEN INSERT INTO alfie.alfie_2005 VALUES (NEW.*);
-WHEN new.flightdate < DATE '2007-01-01'
+WHEN new.year = 2006
 THEN INSERT INTO alfie.alfie_2006 VALUES (NEW.*);
-WHEN new.flightdate < DATE '2008-01-01'
+WHEN new.year = 2007
 THEN INSERT INTO alfie.alfie_2007 VALUES (NEW.*);
-WHEN new.flightdate < DATE '2009-01-01'
+WHEN new.year = 2008
 THEN INSERT INTO alfie.alfie_2008 VALUES (NEW.*);
-WHEN new.flightdate < DATE '2010-01-01'
+WHEN new.year = 2009
 THEN INSERT INTO alfie.alfie_2009 VALUES (NEW.*);
-WHEN new.flightdate < DATE '2011-01-01'
+WHEN new.year = 2010
 THEN INSERT INTO alfie.alfie_2010 VALUES (NEW.*);
 ELSE
 INSERT INTO alfie.alfie VALUES (NEW.*);

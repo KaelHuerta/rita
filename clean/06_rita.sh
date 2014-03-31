@@ -17,7 +17,7 @@ parallel -j+0 --eta 'psql -f ./clean/rita_insert.sql -d rita -v v1={}' ::: $(seq
 date
 
 echo "$(tput setaf 1)Creando índices...$(tput sgr0)"
-#cat ts_ix.sql | parallel -j+0 --eta psql -d rita -c '{}'
+cat ./clean/rita_ix.sql | parallel -j+0 --eta psql -d rita -c '{}'
 date
 
 echo "$(tput setaf 1)Aspirando y analizando...$(tput sgr0)"

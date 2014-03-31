@@ -2,7 +2,7 @@
 
 date
 
-echo "----- TABLA RITA LIMPIA -----"
+echo "$(tput setaf 1)----- TABLA RITA LIMPIA -----$(tput sgr0)"
 
 echo "$(tput setaf 1)Creando catálogos externos...$(tput sgr0)"
 psql -d rita -f ./clean/foreign_tables.sql

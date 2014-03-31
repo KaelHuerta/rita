@@ -1,262 +1,233 @@
-[31mCreando base de datos, esquemas y extensiones...[m
+[31m¿Deseas utilizar los catálogos limpios, aunque escasos, de la página?(B[m
+[31mElige el número de la opción deseada.(B[m
+
+[31mDescargando los catálogos...(B[m
+[31mDescomprimiendo archivos y cambiando de formato...(B[m
+lun mar 31 02:36:11 CST 2014
+lun mar 31 02:48:08 CST 2014
+[31mDividiendo los archivos...(B[m
+lun mar 31 02:48:09 CST 2014
+[31mCreando base de datos, esquemas y extensiones...(B[m
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
 CREATE SCHEMA
+Time: 206,324 ms
 CREATE SCHEMA
+Time: 15,755 ms
 CREATE SCHEMA
+Time: 15,559 ms
 CREATE SCHEMA
+Time: 9,691 ms
 CREATE SCHEMA
+Time: 13,078 ms
 CREATE EXTENSION
+Time: 82,981 ms
 CREATE SERVER
+Time: 19,723 ms
 CREATE EXTENSION
+Time: 63,126 ms
 GRANT
+Time: 10,492 ms
 ALTER DEFAULT PRIVILEGES
+Time: 15,846 ms
 ALTER DEFAULT PRIVILEGES
+Time: 15,442 ms
 ALTER DEFAULT PRIVILEGES
+Time: 9,435 ms
 ALTER DEFAULT PRIVILEGES
-dom mar 30 07:14:06 UTC 2014
+Time: 13,032 ms
+lun mar 31 02:59:54 CST 2014
 ----- TABLA SUCIA RITA -----
-[31mCreando tabla...[m
+[31mCreando tabla...(B[m
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
 CREATE TABLE
-[31mInsertando datos a la base...[m
-[31mCreando índice...[m
-[31mAspirando y analizando...[m
-dom mar 30 07:30:12 UTC 2014
-dom mar 30 07:37:02 UTC 2014
------ TABLA RITA LIMPIA -----
-[31mCreando catálogos externos...[m
+Time: 258,260 ms
+lun mar 31 02:59:54 CST 2014
+[31mInsertando datos a la base...(B[m
+lun mar 31 03:15:44 CST 2014
+[31mCreando índice...(B[m
+lun mar 31 03:15:44 CST 2014
+[31mAspirando y analizando...(B[m
+lun mar 31 03:15:44 CST 2014
+lun mar 31 03:15:44 CST 2014
+[31m----- TABLA RITA LIMPIA -----(B[m
+[31mCreando catálogos externos...(B[m
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
 CREATE FOREIGN TABLE
+Time: 1275,767 ms
 CREATE FOREIGN TABLE
-dom mar 30 07:37:02 UTC 2014
-[31mCreando tablas...[m
+Time: 9,846 ms
+lun mar 31 03:15:46 CST 2014
+[31mCreando tablas...(B[m
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
 CREATE TABLE
+Time: 139,036 ms
 CREATE TABLE
+Time: 350,087 ms
 CREATE TABLE
+Time: 35,147 ms
 CREATE TABLE
+Time: 30,816 ms
 CREATE TABLE
+Time: 35,997 ms
 CREATE TABLE
+Time: 27,968 ms
 CREATE TABLE
+Time: 36,914 ms
 CREATE TABLE
+Time: 231,140 ms
 CREATE TABLE
+Time: 252,020 ms
 CREATE TABLE
+Time: 435,628 ms
 CREATE TABLE
+Time: 191,537 ms
 CREATE TABLE
+Time: 28,230 ms
 CREATE TABLE
+Time: 33,980 ms
 CREATE TABLE
+Time: 34,179 ms
 CREATE TABLE
+Time: 35,826 ms
 CREATE TABLE
+Time: 34,043 ms
 CREATE TABLE
+Time: 85,126 ms
 CREATE TABLE
+Time: 47,047 ms
 CREATE TABLE
+Time: 44,635 ms
 CREATE TABLE
+Time: 75,451 ms
 CREATE TABLE
+Time: 25,056 ms
 CREATE TABLE
+Time: 53,930 ms
 CREATE TABLE
+Time: 124,129 ms
 CREATE TABLE
+Time: 45,529 ms
 CREATE TABLE
+Time: 52,333 ms
 CREATE FUNCTION
+Time: 188,654 ms
 CREATE TRIGGER
+Time: 115,457 ms
 CREATE FUNCTION
-dom mar 30 07:37:03 UTC 2014
-[31mDando formato y limpiando datos...[m
+Time: 13,148 ms
+lun mar 31 03:15:49 CST 2014
+[31mDando formato y limpiando datos...(B[m
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
 INSERT 0 0
+Time: 2987993,419 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
 INSERT 0 0
+Time: 5422838,495 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
 INSERT 0 0
+Time: 5422945,702 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
 INSERT 0 0
+Time: 5422990,271 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
 INSERT 0 0
+Time: 5074142,377 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
 INSERT 0 0
+Time: 5139794,171 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
 INSERT 0 0
+Time: 5139792,950 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
 INSERT 0 0
+Time: 5139794,169 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
 INSERT 0 0
+Time: 5848985,566 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
 INSERT 0 0
+Time: 5766905,014 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
 INSERT 0 0
+Time: 5766904,280 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
 INSERT 0 0
+Time: 5770370,687 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
 INSERT 0 0
+Time: 5944312,092 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
 INSERT 0 0
+Time: 5693780,287 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
 INSERT 0 0
+Time: 6036604,771 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
 INSERT 0 0
+Time: 6256592,210 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
 INSERT 0 0
-INSERT 0 0
-INSERT 0 0
-INSERT 0 0
-INSERT 0 0
-INSERT 0 0
-dom mar 30 10:28:40 UTC 2014
-[31mCreando índices...[m
-dom mar 30 10:28:40 UTC 2014
-[31mAspirando y analizando...[m
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-dom mar 30 10:41:56 UTC 2014
------ TABLA ALFREDO 2.1 -----
-Creando esquema y tabla particionada...
-CREATE SCHEMA
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE TABLE
-CREATE FUNCTION
-CREATE TRIGGER
-Insertando datos a la base...
-INSERT 0 0
-INSERT 0 0
-INSERT 0 0
-INSERT 0 0
-INSERT 0 0
-INSERT 0 0
-INSERT 0 0
-INSERT 0 0
-INSERT 0 0
-INSERT 0 0
-INSERT 0 0
-INSERT 0 0
-INSERT 0 0
-INSERT 0 0
-INSERT 0 0
-INSERT 0 0
-INSERT 0 0
-INSERT 0 0
-INSERT 0 0
-INSERT 0 0
-INSERT 0 0
-INSERT 0 0
-Aspirando y analizando...
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-Creando índices...
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-CREATE INDEX
-Aspirando y analizando...
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
-VACUUM
+Time: 7241920,909 ms

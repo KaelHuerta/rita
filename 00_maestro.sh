@@ -7,11 +7,11 @@ select respuesta in Si No
 do
   if [ "$respuesta" = "Si" ]
     then
-      [ -f log ] && rm log
+#      [ -f log ] && rm log
   	  # Descargamos los archivos
-	    #./datos/02_descarga.sh >> log
+#	    ./datos/02_descarga.sh >> log
 	    # Descomprimimos, cambiamos "encoding" y dividimos
-	    #./datos/03_crear_csv.sh >> log
+#	    ./datos/03_crear_csv.sh >> log
 	    # Creando la base de datos
 	    ./datos/04_crea_base_datos.sh >> log
 	    # Cargando la base de datos

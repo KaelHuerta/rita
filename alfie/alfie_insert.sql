@@ -145,16 +145,16 @@ INSERT INTO alfie.alfie (
                 ,tailnum
                 ,extract(year from flightdate)
                 ,extract(month FROM flightdate)
-         ) as avgmonthdelay
+         ) AS avgmonthdelay
       ,uniqdest AS numdest
    FROM clean.rita
    NATURAL JOIN (
        SELECT uniquecarrier, COUNT(DISTINCT dest) AS uniqdest
        FROM clean.rita
-       WHERE flightdate >=  DATE (2003 || '-01-01')
-         AND flightdate < DATE (2003 ||'-01-01')
+       WHERE flightdate >=  DATE (:v1 || '-01-01')
+         AND flightdate < DATE (:v1+1 ||'-01-01')
          AND uniquecarrier IS NOT NULL
        GROUP BY uniquecarrier) AS tmp
-   WHERE flightdate >=  DATE (2003 || '-01-01')
-      AND flightdate < DATE ((2003+1) ||'-01-01')
+   WHERE flightdate >=  DATE (:v1 || '-01-01')
+      AND flightdate < DATE ((:v1+1) ||'-01-01')
 );

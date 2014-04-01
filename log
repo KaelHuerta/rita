@@ -231,3 +231,390 @@ Pager is always used.
 Expanded display is used automatically.
 INSERT 0 0
 Time: 7241920,909 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 8718787,050 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 8713476,655 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 8733391,684 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 7044984,413 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 4425433,644 ms
+lun mar 31 13:02:13 CST 2014
+[31mCreando índices...(B[m
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+lun mar 31 13:22:53 CST 2014
+[31mAspirando y analizando...(B[m
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+lun mar 31 13:38:31 CST 2014
+[31m----- TABLA ALFREDO 2.1 -----(B[m
+[31mCreando esquema y tablas...(B[m
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+CREATE SCHEMA
+Time: 138,624 ms
+CREATE TABLE
+Time: 2214,907 ms
+CREATE TABLE
+Time: 828,670 ms
+CREATE TABLE
+Time: 158,506 ms
+CREATE TABLE
+Time: 96,914 ms
+CREATE TABLE
+Time: 73,870 ms
+CREATE TABLE
+Time: 89,323 ms
+CREATE TABLE
+Time: 81,570 ms
+CREATE TABLE
+Time: 62,653 ms
+CREATE TABLE
+Time: 103,946 ms
+CREATE TABLE
+Time: 131,600 ms
+CREATE TABLE
+Time: 83,055 ms
+CREATE TABLE
+Time: 48,186 ms
+CREATE TABLE
+Time: 30,107 ms
+CREATE TABLE
+Time: 30,037 ms
+CREATE TABLE
+Time: 141,948 ms
+CREATE TABLE
+Time: 40,943 ms
+CREATE TABLE
+Time: 19,181 ms
+CREATE TABLE
+Time: 45,005 ms
+CREATE TABLE
+Time: 18,707 ms
+CREATE TABLE
+Time: 18,322 ms
+CREATE TABLE
+Time: 18,522 ms
+CREATE TABLE
+Time: 17,763 ms
+CREATE TABLE
+Time: 18,996 ms
+CREATE TABLE
+Time: 17,702 ms
+CREATE TABLE
+Time: 20,466 ms
+CREATE FUNCTION
+Time: 301,127 ms
+CREATE TRIGGER
+Time: 137,277 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+CREATE TABLE
+Time: 29,629 ms
+[31mCreando tabla intermedia...(B[m
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 14
+Time: 102612,894 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 13
+Time: 564879,981 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 14
+Time: 579691,409 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 12
+Time: 592102,156 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 12
+Time: 547969,152 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 10
+Time: 550895,485 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 10
+Time: 544321,598 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 10
+Time: 556370,015 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 10
+Time: 613337,395 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 10
+Time: 607260,380 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 10
+Time: 615001,232 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 10
+Time: 623336,419 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 10
+Time: 651340,027 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 10
+Time: 557689,036 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 11
+Time: 643740,916 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 12
+Time: 648352,307 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 18
+Time: 716268,363 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 19
+Time: 773236,577 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 20
+Time: 757528,143 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 20
+Time: 756656,432 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 20
+Time: 671406,125 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 20
+Time: 413437,594 ms
+[31mInsertando datos a Alf's Mix...(B[m
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 589352,025 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 2945235,131 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 3075946,837 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 3197413,552 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 3087627,192 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 3408787,914 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 3428187,190 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 3523694,413 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 4774309,300 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 4456630,854 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 4529355,081 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 4470699,952 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 4550573,570 ms

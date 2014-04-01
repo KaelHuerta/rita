@@ -10,6 +10,7 @@ CREATE TABLE clean.paso (
      ,lag            text
      ,qdist          integer
      ,qtime          integer
+     ,arrdelay       integer
 );
 
 CREATE TABLE clean.paso_1987 (

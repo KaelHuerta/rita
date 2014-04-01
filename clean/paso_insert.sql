@@ -25,7 +25,8 @@ INSERT INTO clean.paso (
        	        extract(year FROM flightdate)
        	    ORDER BY airtime
        	) AS qtime
+       ,arrdelay
 	FROM clean.rita
 	WHERE flightdate >  DATE (:v1 || '-01-01')
       AND flightdate <= DATE ((:v1+1) ||'-01-01')
-	);
+);

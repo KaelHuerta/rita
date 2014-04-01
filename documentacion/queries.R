@@ -17,14 +17,14 @@ system.time(collect(query4))
 system.time(collect(query5))
 
 
-    user   system  elapsed 
-   0.154    0.020 4446.800 
-R> system.time(collect(query3))
-   user  system elapsed 
-  0.009   0.000 212.138 
-R> system.time(collect(query4))
-   user  system elapsed 
-  0.005   0.004 213.506 
-R> system.time(collect(query5))
-   user  system elapsed 
-   0.01    0.00  281.42 
+#   user   system  elapsed 
+#   0.154    0.020 4446.800 
+
+#   user  system elapsed 
+#  0.009   0.000 212.138 
+
+#   user  system elapsed 
+#  0.005   0.004 213.506 
+
+#   user  system elapsed 
+#   0.01    0.00  281.42 

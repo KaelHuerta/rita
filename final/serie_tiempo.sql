@@ -166,13 +166,3 @@ FROM clean.paso
 group by
 	uniquecarrier;
 --  112144.083 ms (1.8 m)
-
-
-explain
-SELECT
-    airportname
-   ,departures
-   ,arrivals
-FROM graph.nodes
-ORDER BY
-    departures;

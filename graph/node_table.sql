@@ -1,4 +1,4 @@
-CREATE SCHEMA graph;
+CREATE SCHEMA IF NOT EXISTS graph;
 
 CREATE TABLE graph.nodes (
     year        integer

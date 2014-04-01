@@ -3,10 +3,10 @@
 echo "$(tput setaf 1)----- Grafo -----$(tput sgr0)"
 
 echo "$(tput setaf 1)Creando esquema y tablas...$(tput sgr0)"
-psql -d rita -f ./alfie/graph_table.sql
+psql -d rita -f ./graph/graph_table.sql
 
 echo "$(tput setaf 1)Creando nodos...$(tput sgr0)"
-parallel -j+0 --eta 'psql -f ./graph/node_insert.sql -d rita -v v1={}' ::: $(seq 1987 2008)
+parallel -j+0 --eta 'psql -f ./graph/ngraphode_insert.sql -d rita -v v1={}' ::: $(seq 1987 2008)
 
 echo "$(tput setaf 1)Creando aristas...$(tput sgr0)"
 parallel -j+0 --eta 'psql -f ./graph/edge_insert.sql -d rita -v v1={}' ::: $(seq 1987 2008)

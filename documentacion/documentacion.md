@@ -162,6 +162,7 @@ sudo apt-get update
 sudo apt-get -y install python-software-properties
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ saucy-pgdg main" >> /etc/apt/sources.list.d/postgresql.list'
+#sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ wheezy-pgdg main" >> /etc/apt/sources.list.d/postgresql.list'
 sudo apt-get update
 sudo apt-get install postgresql-9.3 libpq5 postgresql-contrib
 ~~~
@@ -199,8 +200,7 @@ Para ingresar con mi usuario y sin contraseña a la base de datos se neccesita c
 ~~~{bash}
 sudo su postgres
 psql
-create role kaelinho login password 'popochito';
-'superuser valid until 'infinity';
+create role <usuario> login password '<contraseña>' superuser valid until 'infinity';
 ~~~
 y a empezar a jugar...
 
@@ -237,7 +237,17 @@ mailx -s "Correo con sólo asunto, perfecto para alertas" < /dev/null "yo@midomi
 echo "cuerpo del correo" | mail -s "asunto" "yo@midominio.com"
 ~~~
 
+### Elegir partición para base de datos
 
+Para conocer en qué disco está montado algún archivo o directorio
+~~~{bash}
+df -P /data/ | tail -1 | cut -d' ' -f 1
+~~~
+
+Para conocer el ID de las particiones
+~~~{bash}
+sudo blkid
+~~~
 
 
 ## *Tunning* del Servidor
@@ -268,10 +278,10 @@ Las modificaciones realizadas fueron:
 - log_lock_waits = on
 - log_temp_files = 0
 - autovacuum = off
-- max_connections = 5 (tire el servidor varias veces por no cambiar esto)
+- max_connections = 5 (tiré el servidor varias veces por no cambiar esto)
 
 ~~~{bash}
-sudo sysctl -w vm.overcommit_memory=0
+sysctl -w vm.overcommit_memory=0
 sysctl -w vm.overcommit_ratio=60
 ~~~
 
@@ -279,3 +289,22 @@ En caso de no saber que hacer probar [esto](https://github.com/gregs1104/pgtune)
 
 
 [Más información](http://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server)
+
+Para respaldar la base de datos y traerla de vuelta a la vida
+
+~~~{bash}
+pg_dump rita > /home/kaelinho/rita.bk
+psql rita < /home/kalinho/rita.bk
+~~~
+
+El problema es que no regresa con índices, ni siquiera las condiciones sobre las tablas particionadas.
+
+
+### Problemas con Google Cloud Engine
+
+- ¡NO HAY UBUNTU! Sólo debian, CentOS y otras cosas que no conozco
+- `GNU parallel` debe usarse con el parámetro `--gnu`. Rompió todos los scritps
+- Todo se hace a través de `gcutil`, interfaz en terminal escrita en `Python`
+- Se tienen que dar de alta las instancias (elegir y pagar), los discos (formatearlos y montarlos), el firewall (abrir puertos para entrada y salida de internet)
+- No se pueden enviar correos de alerta
+- La compatibilidad de los scripts de ubuntu no es muy buena

@@ -2,7 +2,7 @@
 
 date
 
-echo "----- TABLA SUCIA RITA -----"
+echo "$(tput setaf 1)----- TABLA SUCIA RITA -----$(tput sgr0)"
 
 echo "$(tput setaf 1)Creando tabla...$(tput sgr0)"
 psql -d rita -f ./dirty/rita_table.sql
@@ -19,13 +19,11 @@ rm ./datos/archivos.txt
 date
 
 echo "$(tput setaf 1)Creando índice...$(tput sgr0)"
-psql -d rita -c 'CREATE INDEX ix_diry_date ON dirty.rita (flightdate);'
-#cat ./dirty/rita_ix.sql | parallel -j+0 --eta psql -d rita -c '{}'
+psql -d rita -c "CREATE INDEX ix_rita_date ON dirty.rita ((year || '-' || month || '-' || dayofmonth));"
 date
 
 echo "$(tput setaf 1)Aspirando y analizando...$(tput sgr0)"
 psql -d rita -c 'vacuum analyze dirty.rita;'
-#cat ./dirty/rita_vacuum.sql | parallel -j+0 --eta psql -d rita -c '{}'
 date
 
 mailx -s "Rita cargada en sucio." < /dev/null "kaelhuerta@gmail.com"

@@ -4,7 +4,7 @@ vacuum analyze verbose ts.time_serie_1989;
 vacuum analyze verbose ts.time_serie_1990;
 vacuum analyze verbose ts.time_serie_1991;
 vacuum analyze verbose ts.time_serie_1992;
-vacuum analyze verbose ts.tiem_serie_1993;
+vacuum analyze verbose ts.time_serie_1993;
 vacuum analyze verbose ts.time_serie_1994;
 vacuum analyze verbose ts.time_serie_1995;
 vacuum analyze verbose ts.time_serie_1996;

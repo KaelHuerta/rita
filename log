@@ -618,3 +618,156 @@ Pager is always used.
 Expanded display is used automatically.
 INSERT 0 0
 Time: 4550573,570 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 4457129,839 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 4887645,891 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 5068834,722 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 5383625,103 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 6252441,316 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 6322679,767 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 6162744,742 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 5226954,404 ms
+Null display is "".
+Timing is on.
+Pager is always used.
+Expanded display is used automatically.
+INSERT 0 0
+Time: 3441312,643 ms
+[31mAspirando y analizando...(B[m
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+[31mCreando índices...(B[m
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+[31mAspirando y analizando...(B[m
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM
+VACUUM

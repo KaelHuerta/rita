@@ -17,7 +17,7 @@ INSERT INTO ts.time_serie (
        ,CASE WHEN arrdelay = 0 THEN 1 ELSE 0 END AS numontime
        ,CASE WHEN arrdelay < 0 THEN 1 ELSE 0 END AS numearly
   FROM clean.rita AS a
-  WHERE a.flightdate >=  DATE (:v1 || '-01-01')
-    AND a.flightdate <= DATE (:v1 || '-12-31')
+  WHERE a.flightdate >  DATE (:v1 || '-01-01')
+    AND a.flightdate <= DATE ((:v1+1) || '-01-01')
     ORDER BY flightdate ASC
 );

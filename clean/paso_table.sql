@@ -2,17 +2,14 @@ CREATE SCHEMA IF NOT EXISTS clean;
 
 CREATE TABLE clean.paso (
       uniquecarrier  text   
-	 ,tailnum        text   
-     ,year           integer
-     ,month          integer 
-	 ,firsttail      date  
-	 ,lasttail       date 
-	 ,delaymonth     numeric
-	 ,kmcarrier      integer
-	 ,flytimecarrier numeric
-	 ,flightscarrier integer
-	 ,avgmonthdelay  numeric
-	 ,numdest        integer
+	 ,tailnum        text
+	 ,flightdate     date
+	 ,deptime        integer  
+     ,origin         text
+     ,dest           text
+     ,lag            text
+     ,qdist          integer
+     ,qtime          integer
 );
 
 CREATE TABLE clean.paso_1987 (

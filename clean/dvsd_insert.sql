@@ -12,19 +12,3 @@ GROUP BY
    ,qtime
 ORDER BY qdist, qtime ASC
 );
-
-
--- INSERT INTO dist_vs_delay (
--- SELECT
---     extract('year' from min(first)) as year
---    ,qdist
---    ,qtime
---    ,avg(year_delay) as avg_delay
--- FROM results.alfie
--- WHERE flightdate >= DATE ('2003-01-01')
---   AND flightdate <= DATE ('2003-12-31')
--- GROUP BY
---     qdist
---    ,qtime
--- ORDER BY qdist, qtime ASC
--- );

@@ -4,7 +4,7 @@ CREATE TABLE clean.paso (
       uniquecarrier  text   
 	 ,tailnum        text
 	 ,flightdate     date
-	 ,deptime        integer  
+	 ,deptime        integer
      ,origin         text
      ,dest           text
      ,lag            text

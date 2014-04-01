@@ -170,14 +170,9 @@ group by
 
 explain
 SELECT
-    2003 as year
-   ,qdist
-   ,qtime
-   ,avg(arrdelay) as avgdelay
-FROM clean.paso
-WHERE flightdate > DATE ('2003-01-01')
-  AND flightdate <= DATE ('2004-01-01')
-GROUP BY
-    qdist
-   ,qtime
-ORDER BY qdist, qtime;
+    airportname
+   ,departures
+   ,arrivals
+FROM graph.nodes
+ORDER BY
+    departures;

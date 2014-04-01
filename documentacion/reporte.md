@@ -2,7 +2,9 @@ reporte.md
 ======================================
 
 author: Kael Huerta, Prof. Alfie Garbuno y Pablo Bosch
+
 date: 25 de Marzo de 2014
+
 transition: fade
 
 Tablas
@@ -51,7 +53,11 @@ Mantra
 
 Demo
 ======================================
+![dvsd](dvsd.png)
 
+Demo
+======================================
+![wapp](app.png)
 
 Lecciones Aprendidas
 ======================================

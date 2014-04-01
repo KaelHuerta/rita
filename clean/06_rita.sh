@@ -10,6 +10,7 @@ date
 
 echo "$(tput setaf 1)Creando tablas...$(tput sgr0)"
 psql -d rita -f ./clean/rita_table.sql
+psql -d rita -f ./clean/paso_table.sql
 date
 
 echo "$(tput setaf 1)Dando formato y limpiando datos...$(tput sgr0)"
@@ -22,6 +23,10 @@ date
 
 echo "$(tput setaf 1)Aspirando y analizando...$(tput sgr0)"
 cat ./clean/rita_vacuum.sql | parallel -j+0 --eta psql -d rita -c '{}'
+date
+
+echo "$(tput setaf 1)Llenando tabla de paso...$(tput sgr0)"
+parallel -j+0 --eta 'psql -f ./clean/paso_insert.sql -d rita -v v1={}' ::: $(seq 1987 2008)
 date
 
 mailx -s "Rita limpia y con formato." < /dev/null "kaelhuerta@gmail.com"

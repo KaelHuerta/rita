@@ -1,4 +1,4 @@
-INSERT INTO dist_vs_delay (
+INSERT INTO clean.dist_vs_delay (
 SELECT
     :v1 AS year
    ,qdist
@@ -26,5 +26,5 @@ ORDER BY qdist, qtime ASC
 -- GROUP BY
 --     qdist
 --    ,qtime
--- ORDER BY 2, 3 ASC
+-- ORDER BY qdist, qtime ASC
 -- );

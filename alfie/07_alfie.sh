@@ -22,4 +22,4 @@ cat ./alfie/alfie_ix.sql | parallel -j+0 --eta psql -d rita -c '{}'
 echo "$(tput setaf 1)Aspirando y analizando...$(tput sgr0)"
 cat ./alfie/alfie_vacuum.sql | parallel -j+0 --eta psql -d rita -c '{}'
 
-mailx -s "Tabla Al's mix lista." < /dev/null "kaelhuerta@gmail.com"
+mailx -s "Tabla Al's mix lista." < /dev/null "correo@gmail.com"

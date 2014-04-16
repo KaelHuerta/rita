@@ -21,4 +21,4 @@ date
 #wc -l s_utf8_*
 # 123,534,969 total
 
-mailx -s "Rita descomprimida y dividida." < /dev/null "kaelhuerta@gmail.com"
+mailx -s "Rita descomprimida y dividida." < /dev/null "correo@gmail.com"

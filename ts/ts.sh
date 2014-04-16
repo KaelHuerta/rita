@@ -16,6 +16,6 @@ cat ./ts/ts_ix.sql | parallel -j+0 --eta psql -d rita -c '{}'
 echo "$(tput setaf 1)Aspirando y analizando...$(tput sgr0)"
 cat ./ts/ts_vacuum.sql | parallel -j+0 --eta psql -d rita -c '{}'
 
-mailx -s "Tabla serie de tiempo lista." < /dev/null "kaelhuerta@gmail.com"
+mailx -s "Tabla serie de tiempo lista." < /dev/null "correo@gmail.com"
 
 date

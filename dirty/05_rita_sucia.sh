@@ -26,4 +26,4 @@ echo "$(tput setaf 1)Aspirando y analizando...$(tput sgr0)"
 psql -d rita -c 'vacuum analyze dirty.rita;'
 date
 
-mailx -s "Rita cargada en sucio." < /dev/null "kaelhuerta@gmail.com"
+mailx -s "Rita cargada en sucio." < /dev/null "correo@gmail.com"

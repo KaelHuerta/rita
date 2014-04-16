@@ -35,4 +35,4 @@ parallel -j +0 --eta 'psql -f ./clean/dvsd.sql -d rita -v v1={}' ::: $(seq 1987 
 psql -d rita -c "\copy clean.dist_vs_delay to './dvsd.out' csv header"
 date
 
-mailx -s "Rita limpia y con formato." < /dev/null "kaelhuerta@gmail.com"
+mailx -s "Rita limpia y con formato." < /dev/null "correo@gmail.com"

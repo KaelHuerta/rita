@@ -22,4 +22,4 @@ rm ./datos/rita.urls
 
 date
 
-mailx -s "Rita descargada." < /dev/null "kaelhuerta@gmail.com"
+mailx -s "Rita descargada." < /dev/null "correo@gmail.com"
